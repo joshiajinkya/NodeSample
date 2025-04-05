@@ -1,0 +1,16 @@
+name: CI Workflow
+on:
+   push:
+	      branches:
+	      - main
+
+jobs:
+    jib1:
+	        runs-on: windows latest
+	      steps:
+	      -name: checkout
+	      uses: actions/checkout@v4.2.2
+
+        - name: print hello world
+         run: echo "Hellow world!"
+	     
